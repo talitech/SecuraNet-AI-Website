@@ -1,0 +1,190 @@
+/* Image Paths and Background Styles */
+
+/* Logo */
+.navbar-brand {
+    padding: 0;
+    margin-right: 2rem;
+    max-width: 150px;
+}
+
+.navbar-brand img {
+    height: 30px !important;
+    width: auto !important;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Hero Section Background */
+.hero-section {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('../images/cybercrime-through-the-internet--e1615279069227.jpg') center/cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.hero-section img {
+    max-height: 400px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* About Page Background */
+.about-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('../images/3074187.jpg') center/cover;
+    min-height: 50vh;
+}
+
+/* Services Page Background */
+.services-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('../images/female-hacker-wearing-a-hoodie-using-a-dangerous-virus-e1615279123329.jpg') center/cover;
+    min-height: 50vh;
+}
+
+/* Solutions Page Background */
+.solutions-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('../images/cybercrime-through-the-internet--e1615279069227.jpg') center/cover;
+    min-height: 50vh;
+}
+
+/* Contact Page Background */
+.contact-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('../images/3074187.jpg') center/cover;
+    min-height: 50vh;
+}
+
+/* Team Member Images */
+.team-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    height: 250px;
+}
+
+.team-image img {
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: cover !important;
+    transition: transform 0.3s ease;
+}
+
+.team-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Service Icons */
+.service-icon {
+    width: 48px !important;
+    height: 48px !important;
+    margin-bottom: 1rem;
+    object-fit: contain !important;
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 40px !important;
+    height: 40px !important;
+    margin-bottom: 1rem;
+    object-fit: contain !important;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Service Cards */
+.service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer Background */
+footer {
+    background: linear-gradient(rgba(44, 62, 80, 0.95), rgba(44, 62, 80, 0.95)),
+                url('../images/cybercrime-through-the-internet--e1615279069227.jpg') center/cover;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Responsive Image Adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        max-width: 120px;
+    }
+
+    .navbar-brand img {
+        height: 25px !important;
+    }
+
+    .hero-section img {
+        max-height: 300px !important;
+        margin-top: 2rem;
+    }
+
+    .feature-icon, .service-icon {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .team-image, .team-image img {
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        max-width: 100px;
+    }
+
+    .navbar-brand img {
+        height: 20px !important;
+    }
+
+    .hero-section img {
+        max-height: 250px !important;
+    }
+
+    .feature-icon, .service-icon {
+        width: 28px !important;
+        height: 28px !important;
+    }
+
+    .team-image, .team-image img {
+        height: 180px !important;
+    }
+} 

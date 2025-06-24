@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs – SecuraNet AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #10182a 80%, #00e6e6 100%) !important;
+            min-height: 100vh;
+        }
+        .faq-section-bg {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 0 60px 0;
+        }
+        .faq-card {
+            background: rgba(16, 24, 42, 0.92);
+            color: #eaf6fb;
+            border-radius: 22px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+            max-width: 650px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2.5rem 2rem 2rem 2rem;
+        }
+        .faq-title {
+            display: flex;
+            align-items: center;
+            font-size: 2.1rem;
+            font-weight: 700;
+            margin-bottom: 2.2rem;
+            color: #fff;
+        }
+        .faq-title .fa-star {
+            color: #ffc107;
+            font-size: 1.7rem;
+            margin-right: 0.7rem;
+        }
+        .faq-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 0.7rem 0;
+        }
+        .faq-question {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.13rem;
+            font-weight: 600;
+            color: #eaf6fb;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .faq-question.open {
+            color: #00e6e6;
+        }
+        .faq-answer {
+            font-size: 1.04rem;
+            color: #b2c7d9;
+            margin-top: 0.7rem;
+            margin-bottom: 0.2rem;
+            display: none;
+            animation: fadeInFaq 0.4s;
+        }
+        .faq-answer.open {
+            display: block;
+        }
+        .faq-toggle {
+            color: #ffc107;
+            font-size: 1.3rem;
+            margin-left: 1rem;
+            transition: transform 0.2s;
+        }
+        .faq-question.open .faq-toggle {
+            color: #10182a;
+            transform: rotate(45deg);
+        }
+        @keyframes fadeInFaq {
+            from { opacity: 0; transform: translateY(16px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 600px) {
+            .faq-card { padding: 1.2rem 0.5rem; }
+            .faq-title { font-size: 1.3rem; }
+        }
+        /* Add spacing to nav links */
+        .navbar-nav .nav-link {
+            margin: 0 1.2rem;
+            font-size: 1.08rem;
+            /* Reduce glow */
+            text-shadow: 0 0 4px rgba(255,255,255,0.18);
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+        .navbar {
+            background: transparent !important;
+            box-shadow: none !important;
+            border-bottom: none !important;
+            backdrop-filter: none !important;
+            transition: none !important;
+            padding-top: 1.2rem !important;
+            padding-bottom: 1.2rem !important;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/chatlogo.png" alt="SecuraNet AI Logo" class="main-logo" style="height: 36px; max-width: 120px; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="faq.html">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="faq-section-bg">
+        <div class="faq-card">
+            <div class="faq-title"><i class="fa fa-star"></i> FAQs – SecuraNet AI</div>
+            <ul class="faq-list">
+                <li class="faq-item">
+                    <div class="faq-question">What is SecuraNet AI?<span class="faq-toggle"><i class="fas fa-plus"></i></span></div>
+                    <div class="faq-answer">
+                        SecuraNet AI is an intelligent cybersecurity platform designed specifically for African public and educational institutions. It leverages artificial intelligence to detect and prevent threats such as phishing, file tampering, email spoofing, and clone websites. The system aims to make cybersecurity accessible, automated, and effective even in low-resource environments.
+                    </div>
+                </li>
+                <li class="faq-item">
+                    <div class="faq-question">What services does SecuraNet AI provide?<span class="faq-toggle"><i class="fas fa-plus"></i></span></div>
+                    <div class="faq-answer">
+                        SecuraNet AI offers four key cybersecurity services:<br><br>
+                        <b>File Management & Monitoring:</b> to detect suspicious file activity.<br>
+                        <b>Clone Site Detection:</b> to protect users from fake websites.<br>
+                        <b>Phishing Detection:</b> to prevent scams and fraudulent messages.<br>
+                        <b>Email Header Checker:</b> to analyze hidden email metadata for authenticity.<br><br>
+                        These tools work together to protect users, systems, and data from both common and complex cyber threats.
+                    </div>
+                </li>
+                <li class="faq-item">
+                    <div class="faq-question">How does the Email Header Checker work?<span class="faq-toggle"><i class="fas fa-plus"></i></span></div>
+                    <div class="faq-answer">
+                        The Email Header Checker analyzes the technical metadata of an email — such as sender address, IP paths, SPF/DKIM status, and message routing — to determine if the message may be spoofed or fraudulent. It flags potential risks, traces sender locations, and helps users verify if an email should be trusted before clicking on any links.
+                    </div>
+                </li>
+                <li class="faq-item">
+                    <div class="faq-question">What is Clone Site Detection?<span class="faq-toggle"><i class="fas fa-plus"></i></span></div>
+                    <div class="faq-answer">
+                        Clone Site Detection identifies fraudulent websites that closely mimic legitimate platforms like university portals or government sites. Using AI and pattern recognition, it scans links, content structure, and domains to detect fake versions designed to steal credentials or distribute malware. This protects users from being tricked by lookalike pages.
+                    </div>
+                </li>
+                <li class="faq-item">
+                    <div class="faq-question">How does File Management enhance cybersecurity?<span class="faq-toggle"><i class="fas fa-plus"></i></span></div>
+                    <div class="faq-answer">
+                        The file management system continuously monitors file interactions within a platform — such as uploads, downloads, renames, and deletions — to detect and report abnormal or risky behavior. It can flag infected files, prevent unauthorized changes, and log activity for auditing, helping institutions maintain data integrity and prevent internal threats.
+                    </div>
+                </li>
+                <li class="faq-item">
+                    <div class="faq-question">Who is SecuraNet AI built for?<span class="faq-toggle"><i class="fas fa-plus"></i></span></div>
+                    <div class="faq-answer">
+                        SecuraNet AI is developed for students, teachers, administrators, and IT teams in African universities, public schools, and government departments. It's especially useful for organizations with limited cybersecurity capacity, offering tools that are easy to use, multilingual, and adaptable to different levels of digital infrastructure.
+                    </div>
+                </li>
+                <li class="faq-item">
+                    <div class="faq-question">Why is SecuraNet AI important?<span class="faq-toggle"><i class="fas fa-plus"></i></span></div>
+                    <div class="faq-answer">
+                        Africa's growing digital landscape is increasingly vulnerable to cyberattacks. SecuraNet AI addresses this by offering a practical, locally-aware solution that helps institutions prevent common cyber threats. By combining AI with offline access and multilingual support, it reinforces the continent's cyber resilience and protects digital education and public service systems.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer (copied from homepage) -->
+    <footer class="site-footer pt-5 pb-3">
+      <div class="container">
+        <div class="row align-items-center mb-3">
+          <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+            <img src="images/chatlogo.png" alt="Cryptiva Logo" style="height: 38px; width: auto;">
+          </div>
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <ul class="footer-nav list-inline mb-0">
+              <li class="list-inline-item"><a href="index.html">Home</a></li>
+              <li class="list-inline-item"><a href="about.html">About</a></li>
+              <li class="list-inline-item"><a href="services.html">Services</a></li>
+              <li class="list-inline-item"><a href="faq.html">FAQs</a></li>
+              <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-md-end text-center">
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="row mt-3">
+          <div class="col-md-6 text-md-start text-center mb-2 mb-md-0">
+            <a href="#" class="footer-link">Privacy & Policy</a> &nbsp; | &nbsp;
+            <a href="#" class="footer-link">Terms Condition</a>
+          </div>
+          <div class="col-md-6 text-md-end text-center">
+            <span class="footer-copy">Copyright © 2024. All rights reserved</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(function(q) {
+        q.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const icon = this.querySelector('.faq-toggle i');
+            const isOpen = this.classList.contains('open');
+            // Close all
+            document.querySelectorAll('.faq-question').forEach(function(otherQ) {
+                otherQ.classList.remove('open');
+                if (otherQ.nextElementSibling) otherQ.nextElementSibling.classList.remove('open');
+                const otherIcon = otherQ.querySelector('.faq-toggle i');
+                if (otherIcon) { otherIcon.classList.remove('fa-minus'); otherIcon.classList.add('fa-plus'); }
+            });
+            // Open this one if it was closed
+            if (!isOpen) {
+                this.classList.add('open');
+                answer.classList.add('open');
+                if (icon) { icon.classList.remove('fa-plus'); icon.classList.add('fa-minus'); }
+            }
+        });
+    });
+    </script>
+</body>
+</html> 
