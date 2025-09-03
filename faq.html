@@ -159,17 +159,35 @@
                         SecuraNet AI is an intelligent cybersecurity platform designed specifically for African public and educational institutions. It leverages artificial intelligence to detect and prevent threats such as phishing, file tampering, email spoofing, and clone websites. The system aims to make cybersecurity accessible, automated, and effective even in low-resource environments.
                     </div>
                 </li>
-                <li class="faq-item">
-                    <div class="faq-question">What services does SecuraNet AI provide?<span class="faq-toggle"><i class="fas fa-plus"></i></span></div>
-                    <div class="faq-answer">
-                        SecuraNet AI offers four key cybersecurity services:<br><br>
-                        <b>File Management & Monitoring:</b> to detect suspicious file activity.<br>
-                        <b>Clone Site Detection:</b> to protect users from fake websites.<br>
-                        <b>Phishing Detection:</b> to prevent scams and fraudulent messages.<br>
-                        <b>Email Header Checker:</b> to analyze hidden email metadata for authenticity.<br><br>
-                        These tools work together to protect users, systems, and data from both common and complex cyber threats.
-                    </div>
-                </li>
+                    <li class="faq-item">
+                        <div class="faq-question">What services does SecuraNet AI provide?<span class="faq-toggle"><i class="fas fa-plus"></i></span></div>
+                        <div class="faq-answer">
+                            SecuraNet AI offers six key cybersecurity services:<br><br>
+                            <b>File Management & Monitoring:</b> to detect suspicious file activity.<br>
+                            <b>Clone Site Detection:</b> to protect users from fake websites.<br>
+                            <b>Phishing Detection:</b> to prevent scams and fraudulent messages.<br>
+                            <b>Email Header Checker:</b> to analyze hidden email metadata for authenticity.<br>
+                            <b>Phishing Simulation:</b> to train and test teams with realistic phishing simulations to improve awareness.<br>
+                            <b>SMS User Feedback:</b> to collect and analyze real-time user feedback through SMS for instant response.<br><br>
+                            These tools work together to protect users, systems, and data from both common and complex cyber threats.
+                        </div>
+                    </li>
+
+            <li class="faq-item">
+                <div class="faq-question">What is Phishing Simulation?<span class="faq-toggle"><i class="fas fa-plus"></i></span></div>
+                <div class="faq-answer">
+                    Phishing Simulation is a training tool that sends realistic but safe phishing emails to your team to test their awareness. 
+                    It helps identify who may be vulnerable to phishing attacks and provides targeted training to improve detection skills.
+                </div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question">How does SMS User Feedback work?<span class="faq-toggle"><i class="fas fa-plus"></i></span></div>
+                <div class="faq-answer">
+                    SMS User Feedback allows institutions to gather instant security feedback from users via text messages. 
+                    This can be used for reporting suspicious activity, confirming alerts, or collecting quick survey responses to enhance incident response.
+                </div>
+            </li>
                 <li class="faq-item">
                     <div class="faq-question">How does the Email Header Checker work?<span class="faq-toggle"><i class="fas fa-plus"></i></span></div>
                     <div class="faq-answer">
@@ -253,7 +271,7 @@
             // Close all
             document.querySelectorAll('.faq-question').forEach(function(otherQ) {
                 otherQ.classList.remove('open');
-                if (otherQ.nextElementSibling) otherQ.nextElementSibling.classList.remove('open');
+         s       if (otherQ.nextElementSibling) otherQ.nextElementSibling.classList.remove('open');
                 const otherIcon = otherQ.querySelector('.faq-toggle i');
                 if (otherIcon) { otherIcon.classList.remove('fa-minus'); otherIcon.classList.add('fa-plus'); }
             });

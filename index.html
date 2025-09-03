@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -164,67 +169,101 @@
       </div>
     </section>
 
-    <!-- Our Services Section (Grid) -->
-    <section class="services-grid-section py-5">
-      <div class="container">
-        <h5 class="text-center services-grid-subtitle">Our Services</h5>
-        <h2 class="text-center services-grid-title mb-5">What We Offer</h2>
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-3">
-            <div class="service-grid-card">
-              <div class="service-grid-icon-wrapper">
-                <img src="images/database.png" alt="File Management" class="service-grid-icon">
-              </div>
-              <h3>File Management</h3>
-              <p>Track and monitor file changes to detect unauthorized access or tampering.</p>
-              <a href="#" class="service-grid-link">Read More <i class="fas fa-arrow-right"></i></a>
-            </div>
+   <!-- Our Services Section (Grid) -->
+<section class="services-grid-section py-5">
+  <div class="container">
+    <h5 class="text-center services-grid-subtitle">Our Services</h5>
+    <h2 class="text-center services-grid-title mb-5">What We Offer</h2>
+    <div class="row g-4 justify-content-center">
+      
+      <!-- File Management -->
+      <div class="col-md-3">
+        <div class="service-grid-card">
+          <div class="service-grid-icon-wrapper">
+            <img src="images/database.png" alt="File Management" class="service-grid-icon">
           </div>
-          <div class="col-md-3">
-            <div class="service-grid-card">
-              <div class="service-grid-icon-wrapper">
-                <img src="images/layer1.png" alt="Clone Site Detection" class="service-grid-icon">
-              </div>
-              <h3>Clone Site Detection</h3>
-              <p>Identify and block fraudulent websites that mimic your brand or services.</p>
-              <a href="#" class="service-grid-link">Read More <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="service-grid-card">
-              <div class="service-grid-icon-wrapper">
-                <img src="images/security-1.png" alt="Phishing Detection" class="service-grid-icon">
-              </div>
-              <h3>Phishing Detection</h3>
-              <p>Detect and block phishing attempts in real time to protect your users and data.</p>
-              <a href="#" class="service-grid-link">Read More <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="service-grid-card">
-              <div class="service-grid-icon-wrapper">
-                <img src="images/privacy.png" alt="Email Header Checker" class="service-grid-icon">
-              </div>
-              <h3>Email Header Checker</h3>
-              <p>Analyze email headers to identify suspicious or spoofed messages.</p>
-              <a href="#" class="service-grid-link">Read More <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
+          <h3>File Management</h3>
+          <p>Track and monitor file changes to detect unauthorized access or tampering.</p>
+          <a href="#" class="service-grid-link">Read More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
-    </section>
 
-    <!-- Our Believe Parallax Section -->
-    <section class="belief-parallax-section parallax-bg-section">
-      <div class="belief-parallax-overlay"></div>
-      <div class="container belief-parallax-content text-center" style="position: relative; z-index: 2;">
-        <div class="belief-content text-center">
-          <h2 class="belief-title">Our Believe</h2>
-          <div class="belief-underline mx-auto mb-4"></div>
-          <p class="belief-text">Cybersecurity shouldn't be a luxury — it should be inclusive, multilingual, and adaptable to the unique challenges faced across the continent.</p>
+      <!-- Clone Site Detection -->
+      <div class="col-md-3">
+        <div class="service-grid-card">
+          <div class="service-grid-icon-wrapper">
+            <img src="images/layer1.png" alt="Clone Site Detection" class="service-grid-icon">
+          </div>
+          <h3>Clone Site Detection</h3>
+          <p>Identify and block fraudulent websites that mimic your brand or services.</p>
+          <a href="#" class="service-grid-link">Read More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
-    </section>
+
+      <!-- Phishing Detection -->
+      <div class="col-md-3">
+        <div class="service-grid-card">
+          <div class="service-grid-icon-wrapper">
+            <img src="images/security-1.png" alt="Phishing Detection" class="service-grid-icon">
+          </div>
+          <h3>Phishing Detection</h3>
+          <p>Detect and block phishing attempts in real time to protect your users and data.</p>
+          <a href="#" class="service-grid-link">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Email Header Checker -->
+      <div class="col-md-3">
+        <div class="service-grid-card">
+          <div class="service-grid-icon-wrapper">
+            <img src="images/privacy.png" alt="Email Header Checker" class="service-grid-icon">
+          </div>
+          <h3>Email Header Checker</h3>
+          <p>Analyze email headers to identify suspicious or spoofed messages.</p>
+          <a href="#" class="service-grid-link">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- ✅ Phishing Simulation -->
+      <div class="col-md-3">
+        <div class="service-grid-card">
+          <div class="service-grid-icon-wrapper">
+            <img src="images/phishingsimulation.png" alt="Phishing Simulation" class="service-grid-icon">
+          </div>
+          <h3>Phishing Simulation</h3>
+          <p>Send fake phishing emails to test your team's security awareness and reaction.</p>
+          <a href="#" class="service-grid-link">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- ✅ SMS User Feedback -->
+      <div class="col-md-3">
+        <div class="service-grid-card">
+          <div class="service-grid-icon-wrapper">
+            <img src="images/sms feedback.png" alt="SMS User Feedback" class="service-grid-icon">
+          </div>
+          <h3>SMS User Feedback</h3>
+          <p>Get real-time feedback from users via SMS to monitor system alerts and issues.</p>
+          <a href="#" class="service-grid-link">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Our Believe Parallax Section -->
+<section class="belief-parallax-section parallax-bg-section">
+  <div class="belief-parallax-overlay"></div>
+  <div class="container belief-parallax-content text-center" style="position: relative; z-index: 2;">
+    <div class="belief-content text-center">
+      <h2 class="belief-title">Our Believe</h2>
+      <div class="belief-underline mx-auto mb-4"></div>
+      <p class="belief-text">Cybersecurity shouldn't be a luxury — it should be inclusive, multilingual, and adaptable to the unique challenges faced across the continent.</p>
+    </div>
+  </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="site-footer pt-5 pb-3">
